@@ -32,8 +32,8 @@ public class LocalAPITest {
 		
 		baseURI = "http://localhost:3000";
 		JSONObject request = new JSONObject();
-		request.put("firstName", "Harsha");
-		request.put("lastName", "Harjani");
+		request.put("firstName", "Andrew");
+		request.put("lastName", "Tate");
 		request.put("subjectId", 2);
 		
 		given().
@@ -43,7 +43,7 @@ public class LocalAPITest {
 			post("/users").
 		then().
 			statusCode(201).
-			body("firstName",equalTo("Harsha"));
+			body("firstName",equalTo("Andrew"));
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -51,8 +51,8 @@ public class LocalAPITest {
 	public void put() {
 		baseURI = "http://localhost:3000";
 		JSONObject request = new JSONObject();
-		request.put("firstName", "Harsha");
-		request.put("lastName", "Harjani");
+		request.put("firstName", "Andrew");
+		request.put("lastName", "Tate");
 		request.put("subjectId", 1); //Updating the subjectId from 2 to 1
 		
 		given().
