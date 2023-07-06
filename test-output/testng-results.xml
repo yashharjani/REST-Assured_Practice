@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-06T18:14:10 IST" name="Default suite" finished-at="2023-07-06T18:14:14 IST" duration-ms="3840">
+  <suite started-at="2023-07-06T18:21:14 IST" name="Default suite" finished-at="2023-07-06T18:21:18 IST" duration-ms="3963">
     <groups>
     </groups>
-    <test started-at="2023-07-06T18:14:10 IST" name="Default test" finished-at="2023-07-06T18:14:14 IST" duration-ms="3840">
-      <class name="tests.SoapXMLRequest">
-        <test-method signature="AddSoapAPI()[pri:0, instance:tests.SoapXMLRequest@67d48005]" started-at="2023-07-06T18:14:10 IST" name="AddSoapAPI" finished-at="2023-07-06T18:14:12 IST" duration-ms="2611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddSoapAPI -->
-        <test-method signature="SubtractSoapAPI()[pri:0, instance:tests.SoapXMLRequest@67d48005]" started-at="2023-07-06T18:14:12 IST" name="SubtractSoapAPI" finished-at="2023-07-06T18:14:14 IST" duration-ms="1196" status="PASS">
+    <test started-at="2023-07-06T18:21:14 IST" name="Default test" finished-at="2023-07-06T18:21:18 IST" duration-ms="3963">
+      <class name="tests.CalculatorSoapAPI">
+        <test-method signature="SubtractSoapAPI()[pri:1, instance:tests.CalculatorSoapAPI@67d48005]" started-at="2023-07-06T18:21:14 IST" name="SubtractSoapAPI" finished-at="2023-07-06T18:21:17 IST" duration-ms="2719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubtractSoapAPI -->
-      </class> <!-- tests.SoapXMLRequest -->
+        <test-method signature="AddSoapAPI()[pri:2, instance:tests.CalculatorSoapAPI@67d48005]" started-at="2023-07-06T18:21:17 IST" name="AddSoapAPI" finished-at="2023-07-06T18:21:18 IST" duration-ms="1212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddSoapAPI -->
+      </class> <!-- tests.CalculatorSoapAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

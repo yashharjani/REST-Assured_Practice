@@ -16,7 +16,7 @@ import org.apache.commons.io.IOUtils;
 
 public class CalculatorSoapAPI {
 	
-	@Test
+	@Test(priority = 1)
 	public void AddSoapAPI() throws IOException {
 		
 		System.out.println("\nThis is the ADD API response");
@@ -60,7 +60,7 @@ public class CalculatorSoapAPI {
 		 assertEquals(String.valueOf(5), addResult);
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void SubtractSoapAPI() throws IOException {
 		
 		System.out.println("\n\nThis is the SUBTRACT API response");
