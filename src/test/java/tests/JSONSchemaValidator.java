@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
+
 public class JSONSchemaValidator {
 	
 	@Test

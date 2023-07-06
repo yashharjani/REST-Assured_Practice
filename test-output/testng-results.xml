@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T17:15:29 IST" name="Default suite" finished-at="2023-07-05T17:15:31 IST" duration-ms="1614">
+  <suite started-at="2023-07-06T18:14:10 IST" name="Default suite" finished-at="2023-07-06T18:14:14 IST" duration-ms="3840">
     <groups>
     </groups>
-    <test started-at="2023-07-05T17:15:29 IST" name="Default test" finished-at="2023-07-05T17:15:31 IST" duration-ms="1614">
-      <class name="tests.JSONSchemaValidator">
-        <test-method signature="testGET()[pri:0, instance:tests.JSONSchemaValidator@12468a38]" started-at="2023-07-05T17:15:29 IST" name="testGET" finished-at="2023-07-05T17:15:31 IST" duration-ms="1584" status="PASS">
+    <test started-at="2023-07-06T18:14:10 IST" name="Default test" finished-at="2023-07-06T18:14:14 IST" duration-ms="3840">
+      <class name="tests.SoapXMLRequest">
+        <test-method signature="AddSoapAPI()[pri:0, instance:tests.SoapXMLRequest@67d48005]" started-at="2023-07-06T18:14:10 IST" name="AddSoapAPI" finished-at="2023-07-06T18:14:12 IST" duration-ms="2611" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGET -->
-      </class> <!-- tests.JSONSchemaValidator -->
+        </test-method> <!-- AddSoapAPI -->
+        <test-method signature="SubtractSoapAPI()[pri:0, instance:tests.SoapXMLRequest@67d48005]" started-at="2023-07-06T18:14:12 IST" name="SubtractSoapAPI" finished-at="2023-07-06T18:14:14 IST" duration-ms="1196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubtractSoapAPI -->
+      </class> <!-- tests.SoapXMLRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
