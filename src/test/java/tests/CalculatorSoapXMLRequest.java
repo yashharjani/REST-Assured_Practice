@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 
 import org.apache.commons.io.IOUtils;
 
-public class SoapXMLRequest {
+public class CalculatorSoapXMLRequest {
 	
 	@Test
 	public void AddSoapAPI() throws IOException {
