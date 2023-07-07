@@ -153,6 +153,27 @@ public class CalculatorSoapAPI {
 		and().
 		 	body("//*:DivideResult.text()",equalTo("5")).
 		 	log().all();
+		given().
+		header("Content-Type","text/xml").
+		body(requestBody).
+		when().
+		post("/calculator.asmx").
+		then().
+		statusCode(200).
+		and().
+		body("//*:DivideResult.text()",equalTo("5")).
+		log().all();
+		
+// The above code can also be written as: 		
+		given().
+		contentType("text/xml").body(requestBody).
+		when().
+		post("/calculator.asmx").
+		then().
+		statusCode(200).
+		and().
+		body("//*:DivideResult.text()",equalTo("5")).
+		log().all();
 	}
 	
 }
