@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="2" name="Test">
-    <classes>
- <!-- <class name="tests.JSONSchemaValidator"/>
-      <class name="tests.TestExamples"/>
-      <class name="tests.PutPatchDeleteExamples"/>
-      <class name="tests.GetAndPostExamples"/>
-      <class name="tests.LocalAPITest"/>
+	<test thread-count="2" name="Test">
+		<classes>
+<!--        <class name="tests.JSONSchemaValidator"/>
+	        <class name="tests.TestExamples"/>
+	        <class name="tests.PutPatchDeleteExamples"/>
+	        <class name="tests.GetAndPostExamples"/>
+	        <class name="tests.LocalAPITest"/>
 -->
-	  <class name="tests.CalculatorSoapAPI"/>
-    </classes>
-  </test> <!-- Test -->
+			<class name="tests.CalculatorSoapAPI"/>
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
