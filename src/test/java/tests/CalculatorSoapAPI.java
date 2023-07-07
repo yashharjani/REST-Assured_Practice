@@ -101,4 +101,58 @@ public class CalculatorSoapAPI {
 		 assertEquals(String.valueOf(8), subtractResult);
 	}
 	
+	@Test(priority = 3)
+	public void MultiplySoapAPI() throws IOException {
+		
+		System.out.println("\n\nThis is the MULTIPLY API response");
+		File file = new File("./SoapRequest/Multiply.xml");
+		
+		if(file.exists())
+			System.out.println("	>> File Exists");
+		
+		FileInputStream fileInputStream = new FileInputStream(file);
+		
+		String requestBody = IOUtils.toString(fileInputStream,"UTF-8");
+		
+		baseURI ="http://www.dneonline.com";
+		
+		given().
+			header("Content-Type","text/xml").
+			body(requestBody).
+		when().
+			post("/calculator.asmx").
+		then().
+			statusCode(200).
+		and().
+		 	body("//*:MultiplyResult.text()",equalTo("25")).
+		 	log().all();	
+	}
+	
+	@Test(priority = 4)
+	public void DivideSoapAPI() throws IOException {
+		
+		System.out.println("\n\nThis is the DIVIDE API response");
+		File file = new File("./SoapRequest/Divide.xml");
+		
+		if(file.exists())
+			System.out.println("	>> File Exists");
+		
+		FileInputStream fileInputStream = new FileInputStream(file);
+		
+		String requestBody = IOUtils.toString(fileInputStream,"UTF-8");
+		
+		baseURI ="http://www.dneonline.com";
+		
+		given().
+			header("Content-Type","text/xml").
+			body(requestBody).
+		when().
+			post("/calculator.asmx").
+		then().
+			statusCode(200).
+		and().
+		 	body("//*:DivideResult.text()",equalTo("5")).
+		 	log().all();
+	}
+	
 }
