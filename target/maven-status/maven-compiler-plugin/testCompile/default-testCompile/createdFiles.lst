@@ -1,0 +1,6 @@
+tests\GetAndPostExamples.class
+tests\PutPatchDeleteExamples.class
+tests\CalculatorSoapAPI.class
+tests\JSONSchemaValidator.class
+tests\TestExamples.class
+tests\LocalAPITest.class
