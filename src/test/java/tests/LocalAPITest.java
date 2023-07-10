@@ -1,3 +1,4 @@
+// To execute this code, a JSON server has to be started (json-server --watch db.json).
 package tests;
 
 import org.json.simple.JSONObject;
