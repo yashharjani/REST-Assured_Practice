@@ -27,7 +27,7 @@ public class LocalAPITest {
 	}
 	
 	@SuppressWarnings("unchecked")
-//	@Test
+	@Test
 	public void post() {
 		
 		baseURI = "http://localhost:3000";
@@ -47,7 +47,7 @@ public class LocalAPITest {
 	}
 	
 	@SuppressWarnings("unchecked")
-//	@Test
+	@Test
 	public void put() {
 		baseURI = "http://localhost:3000";
 		JSONObject request = new JSONObject();
@@ -65,7 +65,7 @@ public class LocalAPITest {
 			log().all();
 	}
 	
-//	@Test
+	@Test
 	public void delete() {
 		baseURI = "http://localhost:3000";
 		given().delete("/users/3").then().statusCode(200);
